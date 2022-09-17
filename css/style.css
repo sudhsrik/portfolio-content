@@ -1,1 +1,23 @@
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	color: aliceblue;
+	background-color: red;
+}
 
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+.active{
+	background: white;
+    text-decoration: underline;
+	text-align: center;
+}
+
+.brief_intro {
+    text-align: left;
+    float: right;
+}

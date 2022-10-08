@@ -1,9 +1,9 @@
 body{
 	margin:1%;
 	padding:1%;
-	font-size:150%;
 	color: rgb(3, 33, 60);
-	background-color: rgb(244, 236, 236);
+	background-color: lightcyan;
+	border: 2px solid #8a2be2;
 }
 
 h1{
@@ -11,10 +11,35 @@ h1{
 	font-weight: bold;
 }
 
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: rgb(14, 3, 3);
+	font-style: oblique;
+}
+
+h3 {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+nav li{
+	background-color: lightyellow;
+	padding:1vw;
+	width: 1vw;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
+}
+
 .active{
-	background: white;
+	background: aliceblue;
     text-decoration: underline;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.active a{
+	text-decoration: none;
 }
 
 .brief_intro {
@@ -28,41 +53,87 @@ h1{
     width: auto
 }
 
-
-h2{
-	font-size: 1em; 
-	font-weight: bold;
+.gallery-skip-to-main-link {
+	border: 1px dashed #000000;
+	background-color: darkolivegreen;
+	color: white;
+	padding: 1%;
 }
 
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
+.gallery_img {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat (5, 1fr);
+	row-gap: 2vw;
+}	
+
+.img1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 
-/*Add borders around the main components and some
-space too*/
-header, nav, main, footer{
-	border: 3px solid red;
-	margin: 20px 0;
+.img2 {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+}
+
+.img3 {
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+}
+
+.img4 {
+	grid-column: 5 / 6;
+	grid-row: 1 / 2;
+}
+
+.img5 {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.img6 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.img7 {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.img8 {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+}
+
+.img9 {
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
 }
 
 img{
     height: 175px;
-	width:auto;
-    border: 3px solid rgb(13, 13, 19);
-    padding: 3px;
-    border-radius: 10px;
+	width: auto;
+    border: 2px solid rgb(13, 13, 19);
+    border-radius: 8px;
     margin: 10px;
-}
-
-nav li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
+	padding: 1px;
 	display: inline-block;
-	width: 20%;
 }
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+img:hover, img:focus {
+    box-shadow: 10px 10px 5px #41b0b2
+}
+
+a:visited{
+	text-transform: none;
+}
+
+footer {
+	width: 50%;
+	height: 1%;
+	padding: 0.5vw;
+	margin: 1px;
+	border: 1px dotted silver;
+}

@@ -2,7 +2,7 @@ body{
 	margin:1%;
 	padding:1%;
 	color: rgb(3, 33, 60);
-	background-color: lightcyan;
+	background-color: rgb(228, 236, 236);
 	border: 2px solid #8a2be2;
 }
 
@@ -24,11 +24,10 @@ h3 {
 
 nav li{
 	background-color: lightyellow;
-	padding:1vw;
-	width: 1vw;
+	padding: 2vw;
+	width: fit-content;
 	border:1px solid black;
 	display: inline-block;
-	width: 20%;
 }
 
 .active{
@@ -50,7 +49,9 @@ nav li{
 .company_logo {
     float: right;
     height: 50px;
-    width: auto
+    width: auto;
+	backdrop-filter: invert(40%);
+	padding: 3px;
 }
 
 .gallery-skip-to-main-link {
@@ -123,7 +124,7 @@ img{
 }
 
 img:hover, img:focus {
-    box-shadow: 10px 10px 5px #41b0b2
+    box-shadow: 10px 10px 5px #1f61d3
 }
 
 a:visited{

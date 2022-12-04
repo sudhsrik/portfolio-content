@@ -13,6 +13,7 @@
 
 <body>
 	<header>
+		<a class="skip-to-content-link" href="#main"> Skip to content </a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -26,27 +27,45 @@
 		</nav>
 	</header>
 
-    <main>
-        <h1>My contact info</h1>
-		<div class="vibrated_animation">
-			<figure>
+    <main id="main" class="contact_page_grid">
+		<div class="contact_image">
+			<figure class="vibrated_animation">
 				<img src="images/contact_info/contact_pic.jpg" alt="Cool pic of me wearing sunglasses"/>
 				<figcaption>Cool pic of me wearing sunglasses</figcaption>
 			</figure>
 		</div>
-        <h2> Email </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-envelope"> sudhsrik@umich.edu </i>
+		<div class="contact_details">
+			<h1>My contact info</h1>
+			<h2> Email </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-envelope"> sudhsrik@umich.edu </i>
+			</div>
+			<h2> Phone </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-phone">+1 (470)-642-5038</i>
+			</div>
+			<h2> LinkedIn </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-linkedin"> http://www.linkedin.com/in/sudharsan-babu-srikanthan </i>
+			</div>
+			<h2> Instagram </h2>
+			<p> Insert instagram here </p>
+		  <form action="https://formspree.io/f/xpzngvwa" method="POST">
+			<label>
+			  Your email:
+			  <input type="email" name="email">
+			</label>
+			<label>
+				What do you do?
+				<input type="text" name="profession">
+			  </label>
+			<label>
+				Why are you interested in me?
+			  <textarea name="message"></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button type="submit">Send</button>
+		  </form>
 		</div>
-		<h2> Phone </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-phone">+1 (470)-642-5038</i>
-		</div>
-        <h2> LinkedIn </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-linkedin"> http://www.linkedin.com/in/sudharsan-babu-srikanthan </i>
-		</div>
-        <h2> Instagram </h2>
-        <p> Insert instagram here </p>
     </main>
 </body>

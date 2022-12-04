@@ -58,12 +58,16 @@ h3 {
 }
 
 nav li{
-	background-color: lightyellow;
-	padding: 2vw;
+	padding: 1vw;
 	width: fit-content;
 	border:1px solid black;
 	border-radius: 10px;
-	display: inline-block;
+	/* display: inline-block; */
+}
+
+nav ul li {
+	background-position: left;
+	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
 }
 
 label {
@@ -80,6 +84,7 @@ input, textarea {
     text-decoration: underline;
 	text-align: center;
 	text-transform: uppercase;
+	background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
 }
 
 .active a{
@@ -97,6 +102,15 @@ input, textarea {
     width: auto;
 	backdrop-filter: invert(40%);
 	padding: 3px;
+}
+
+article h3, h4 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color:rgb(13, 13, 19);
+}
+
+article h4 {
+	font-style: oblique;
 }
 
 .gallery-skip-to-main-link {
@@ -118,6 +132,11 @@ img{
 
 img:hover, img:focus {
     box-shadow: 10px 10px 5px #1f61d3
+}
+
+figcaption {
+	color: rgb(28, 1, 181);
+	font-style: oblique;
 }
 
 a:visited{
@@ -154,6 +173,14 @@ footer {
 	footer {
 		grid-row: 4 / 5;
 	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
 	.gallery_img {
 		display: flex;
 		flex-direction: column;
@@ -162,12 +189,14 @@ footer {
 		align-items: center;
 		justify-items: center;
 	}	
+
 	.gallery_img > * {
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
 		align-items: center;
 	}
+
 	/* Subgrid */
 	.contact_page_grid {
 		display: grid;
@@ -201,7 +230,7 @@ footer {
 }
 
 /* Desktop / Tablet view */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 	body {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
@@ -228,11 +257,17 @@ footer {
 		grid-column: 1 / -1;
 	}
 
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
 	.gallery_img {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-content: flex-start;
 		align-items: center;
 		justify-items: center;
@@ -270,11 +305,13 @@ footer {
 
 	.company-exp-item > .exp-diagram {
 		grid-column: 2 / 3;
+		grid-row: 1 / -1;
 		align-self: end;
 	}
 
 	.company-exp-item > .exp-description {
 		grid-column: 1 / 2;
+		grid-row: 1 / -1;
 	}
 }
 

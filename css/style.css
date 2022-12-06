@@ -259,8 +259,9 @@ footer {
 		grid-row: 2 / 3;
 	}
 }
+
 /* Tablet view */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
 	nav ul {
 		display: flex;
 		flex-direction: row;

@@ -352,7 +352,7 @@ footer {
 }
 
 @media (prefers-reduced-motion) {
-	.vibrated_animation img {
+	.vibrated_animation img:hover {
 		animation: none;
   }
 }

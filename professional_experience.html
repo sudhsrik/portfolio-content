@@ -2,6 +2,15 @@
 <html lang="en">
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYDF8Z1TBP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XYDF8Z1TBP');
+    </script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
@@ -9,9 +18,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Sudharsan Babu Srikanthan Personal portfolio | Professional Experience </title>
 </head>
-
 <body>
 	<header>
+        <a class="skip-to-content-link" href="#main"> Skip to content </a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -25,14 +34,15 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<h1>Professional Experience</h1>
 		    <p>
 			    This sections details my industrial as well as academic research experience.
 		    </p>
             <section>
                 <h2> Industrial experience</h2>
-                    <article>
+                    <article class="company-exp-item">
+                        <div class="exp-description">
                         <h3> Summer Intern at Netscout Systems, Inc. </h3>
                         <h4> Ann Arbor, MI </h4>
                         <p>
@@ -41,22 +51,30 @@
                             Modified authentication methods used by the product so as to make it FIPS/CC compliant.
                             Increased the number of configuration options available by 15% for cloud-initialisation of the product.
                         </p>
+                        </div>
+                        <div class="exp-diagram">
                         <figure>
                             <img class="company_logo" src="images/prof_exp/netscout_systems_logo.jpg" alt="Netscout Systems Logo"/>
                             <figcaption>Netscout Systems, Inc</figcaption>
                         </figure>
+                        </div>
                     </article>
-                    <article>
+                    <article class="company-exp-item">
+                        <div class="exp-description">
                         <h3> Intern/Contractor at Analog Devices, Inc. </h3>
                         <h4> Bangalore, India</h4>
                         <p>
-                            Automated the Design Verification (DV) process of Portmux and Pin Pad reset states using Python, reduced verification time by 90% .
-                            SHARC ADSP-based automated programming of SoCs in both assembly (for SHARC cores) and C (for ARM A55 cores) to reduce verification time.
-                            System level Design Verification (DV) of the SoC integration of MSHC (Mobile Storage Host Controller) block.                        </p>
+                            Automated the Design Verification (DV) process of Portmux and Pin Pad reset states using Python, reduced verification time by 90% . SHARC ADSP-based automated programming of SoCs in both assembly (for SHARC cores) and C (for ARM A55 cores) to reduce verification time. 
+                            System level Design Verification (DV) of the SoC integration of MSHC (Mobile Storage Host Controller) block. Programmed various kinds of DMA transfers to and from MSHC blocks and the cache memories in the system. Partially automated the code generation process for the above task.
+                            Also worked on a small percentage of EMAC tasks and programmed DMA transfers for this block as well.
+                        </p>
+                        </div>
+                        <div class="exp-diagram">
                         <figure>
                             <img class="company_logo" src="images/prof_exp/ADI_Logo.jpg" alt="ADI Logo"/>
                             <figcaption>Analog Devices, Inc.</figcaption>
                         </figure>
+                        </div>
                     </article>
             </section> 
             <section>
@@ -70,9 +88,11 @@
                         </p>
                     </article>
                     <article>
-                        <h3> Project 2</h3>
+                        <h3> Estimating Remaining Useful Life of Lithoum Ion batteries by using Digital Twins </h3>
                         <p>
-                            Description of project 2
+                            Developed an ML based Digital Twin (DT) solution that utilizes RNNs to estimate the Remaining Useful Life (RUL) of Lithium ion batteries with high
+                            accuracy and robustness under dynamic operating conditions. Two DTs were used: one for estimating battery capacity and the other for extrapolating it to measure RUL. 
+                            Reduced capacity prediction RMSE by 55% and obtained a 95% confidence interval of ±5 for the RUL estimate.
                         </p>
                     </article>
             </section> 

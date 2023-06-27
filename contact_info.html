@@ -2,6 +2,15 @@
 <html lang="en">
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYDF8Z1TBP"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-XYDF8Z1TBP');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/e35a10a94d.js" crossorigin="anonymous"></script>
@@ -10,9 +19,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Sudharsan Babu Srikanthan Personal portfolio | Contact info </title>
 </head>
-
 <body>
 	<header>
+		<a class="skip-to-content-link" href="#main"> Skip to content </a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -26,27 +35,43 @@
 		</nav>
 	</header>
 
-    <main>
-        <h1>My contact info</h1>
-		<div class="vibrated_animation">
-			<figure>
+    <main id="main" class="contact_page_grid">
+		<div class="contact_image">
+			<figure class="vibrated_animation">
 				<img src="images/contact_info/contact_pic.jpg" alt="Cool pic of me wearing sunglasses"/>
 				<figcaption>Cool pic of me wearing sunglasses</figcaption>
 			</figure>
 		</div>
-        <h2> Email </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-envelope"> sudhsrik@umich.edu </i>
+		<div class="contact_details">
+			<h1>My contact info</h1>
+			<h2> Email </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-envelope"> sudhsrik@umich.edu </i>
+			</div>
+			<h2> Phone </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-phone">+1 (470)-642-5038</i>
+			</div>
+			<h2> LinkedIn </h2>
+			<div class="font_awesome">
+				<i class="fa-solid fa-linkedin"> http://www.linkedin.com/in/sudharsan-babu-srikanthan </i>
+			</div>
+		  <form action="https://formspree.io/f/xpzngvwa" method="POST">
+			<label>
+			  Your email:
+			  <input type="email" name="email">
+			</label>
+			<label>
+				What do you do?
+				<input type="text" name="profession">
+			  </label>
+			<label>
+				Why are you interested in me?
+			  <textarea name="message"></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button type="submit">Submit</button>
+		  </form>
 		</div>
-		<h2> Phone </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-phone">+1 (470)-642-5038</i>
-		</div>
-        <h2> LinkedIn </h2>
-		<div class="font_awesome">
-			<i class="fa-solid fa-linkedin"> http://www.linkedin.com/in/sudharsan-babu-srikanthan </i>
-		</div>
-        <h2> Instagram </h2>
-        <p> Insert instagram here </p>
     </main>
 </body>
